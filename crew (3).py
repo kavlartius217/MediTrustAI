@@ -3,9 +3,9 @@ from crewai.project import agent, task, crew, CrewBase
 from crewai import LLM
 import yaml
 import os
-os.environ['SERP_API_KEY']="ee08551075c8b0e9f2ea0cd93df6ecf24e9720ab"
-os.environ['OPENAI_API_KEY']="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"
-os.environ['GROQ_API_KEY']="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"
+os.environ['SERP_API_KEY']=""
+os.environ['OPENAI_API_KEY']=""
+os.environ['GROQ_API_KEY']=""
 
 #report
 from langchain_community.document_loaders import PyPDFLoader
