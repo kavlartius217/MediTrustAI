@@ -1,0 +1,20 @@
+blood_test_task: 
+  description: "Analyze the provided blood test report {blood_test_report} to identify key health indicators, detect any abnormalities, and summarize the individual's overall health status."
+  expected_output: "A structured summary highlighting critical health metrics, noting any deviations from normal ranges, and providing an overall assessment of the individual's health based on the blood test results."
+  agent: blood_test_analyst
+  output_file: blood_test_report.md
+
+
+health_researcher_task:
+  description: "Based on the report recieved from the health_researcher agent conduct online research to find reputable health articles that address the specific health indicators and abnormalities identified in the blood test analysis. "
+  expected_output: "A curated list of relevant health articles, including titles, brief descriptions, and URLs, focusing on the health topics pertinent to the individual's blood test findings"
+  agent: health_researcher_agent
+  output_file: research.md
+
+
+health_advisor_task:
+  description: "Based on the reports recieved from the blood_test_analyst and the health_researcher develop personalized health recommendations based on the blood test analysis and the information gathered from the health articles, aiming to guide the individual towards improved health outcomes"
+  expected_output: "A set of tailored health recommendations encompassing dietary suggestions, lifestyle modifications, and advice on further medical consultations, all grounded in the individual's specific health data and supported by the researched articles"
+  agent: health_advisor_agent
+  output_file: advise.md
+
