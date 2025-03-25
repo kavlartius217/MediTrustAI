@@ -9,7 +9,7 @@ nest_asyncio.apply()
 class State(BaseModel):
   abnormalities:str=" "
   decision:str=" "
-  report:str=" 
+  report:str=" "
 
 
 class MediTrustAI(Flow[State]):
